@@ -72,6 +72,13 @@ for i in {1.100}; do echo $i; done
 # done
 
 
+# trap command
+# gets the msg when it trapped one is interrputed"
 
 
- 
+trap "echo dont use ctrl+c" SIGINT^C
+
+
+
+
+
